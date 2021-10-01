@@ -8,5 +8,12 @@ In this work, we are trying to classify galaxies into spirals, ellipticals or ev
 In the samples folder you will find some examples of spiral and elliptical galaxies. They are divided into two categories: easy and difficult.
 The galaxies in the easy category are those that we can clearly see if they are elliptical or spiral. The ones in the difficult category, on the other hand, have elements that can make the classification ambiguous, or even a lot of elements polluting the images.
 
+### Dataset
+Our data collection pipeline is as follows:
+1) We look up the tables we need to query on the SDSS page;
+2) We make an SQL query through the Sci-Server, which has data from several telescopes and SDSS releases;
+3) Through a python script we access the SDSS Finding Chart tool and make a screenshot of the image found;
+4) Finally, we generate a jpg image that is named according to the SDSS ID.
+
 
 

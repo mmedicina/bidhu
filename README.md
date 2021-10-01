@@ -12,8 +12,11 @@ The galaxies in the easy category are those that we can clearly see if they are 
 Our data collection pipeline is as follows:
 1) We look up the tables we need to query on the SDSS page;
 2) We make an SQL query through the Sci-Server, which has data from several telescopes and SDSS releases;
-3) Through a python script we access the SDSS Finding Chart tool and make a screenshot of the image found;
-4) Finally, we generate a jpg image that is named according to the SDSS ID.
+3) The result of the query is a CSV file, in which we can obtain the right ascension, declination and the label assigned by Galaxy Zoo of the analyzed galaxies;
+4) Through a python script we access the SDSS Finding Chart tool with the coordinates found above and make a screenshot of the image found;
+5) Finally, we generate a jpg image that is named according to the SDSS ID.
 
+This process is illustrated in the image below:
 
+![image](https://user-images.githubusercontent.com/48294589/135667499-314e2470-8ec5-4afe-a299-5bed0fbafd08.png)
 
